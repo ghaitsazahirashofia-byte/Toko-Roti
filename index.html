@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Toko Roti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid fa-cookie-bite"></i> TOKO ROTI</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target" aria-controls="navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active fw-bold" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="keranjang.html">Keranjang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontak.html">Contact Us</a></li>
+                    </ul>
+                    <form action="produk.html" method="GET" class="search-box d-flex align-items-center border bg-light rounded px-3 py-1 m-0">
+                        <i class="fa fa-search text-muted"></i>
+                        <input type="text" name="q" id="search-input" class="form-control border-0 bg-transparent shadow-none" placeholder="Cari roti..." style="width: 180px;">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mb-5">
+        <section class="container mt-4">
+            <div class="hero">
+                <div class="placeholder-box text-center p-5">
+                    <div>
+                        <h1 class="display-4 fw-bold text-dark">Roti Segar Setiap Hari</h1>
+                        <p class="lead text-muted">Dibuat dengan bahan premium dan resep rahasia keluarga.</p>
+                        <a href="produk.html" class="btn btn-dark btn-lg mt-3">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-5">
+            <div class="row text-center">
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+                    <p class="fw-bold">Bahan Pilihan</p>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
+                    <p class="fw-bold">Kualitas Terbaik</p>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-icon"><i class="fa-solid fa-truck"></i></div>
+                    <p class="fw-bold">Pengiriman Aman</p>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="feature-icon"><i class="fa-solid fa-face-smile"></i></div>
+                    <p class="fw-bold">Pelayanan Ramah</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Toko Roti Kami. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

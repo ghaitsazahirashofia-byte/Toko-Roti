@@ -1,0 +1,198 @@
+/* style.css - Tema Warna Toko Roti (Warm Bakery Theme) */
+
+/* ================= VARIABEL WARNA ================= */
+:root {
+    --krem-pucat: #FFFAF0;     /* Background utama (Tepung/Vanilla) */
+    --krem-gandum: #F5DEB3;    /* Highlight/Aksen (Mentega) */
+    --coklat-susu: #A0522D;    /* Tombol/Elemen penting (Karamel) */
+    --coklat-tua: #4E342E;     /* Teks utama/Footer (Kopi/Dark Chocolate) */
+    --coklat-emas: #D2691E;    /* Harga/Ikon (Roti Panggang) */
+    --putih: #FFFFFF;
+}
+
+/* ================= PENGATURAN UMUM ================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--krem-pucat);
+    color: var(--coklat-tua);
+}
+
+/* ================= NAVBAR (HEADER) ================= */
+.navbar {
+    background-color: var(--putih) !important;
+    border-bottom: 3px solid var(--krem-gandum) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+.navbar-brand, .nav-link {
+    color: var(--coklat-tua) !important;
+}
+.nav-link.active, .nav-link:hover {
+    color: var(--coklat-susu) !important;
+    border-bottom: 2px solid var(--coklat-susu);
+}
+
+/* ================= KUSTOMISASI TOMBOL & TEKS ================= */
+/* Mengubah tombol hitam Bootstrap menjadi warna Coklat Susu/Karamel */
+.btn-dark {
+    background-color: var(--coklat-susu);
+    border-color: var(--coklat-susu);
+    color: var(--putih);
+    transition: all 0.3s;
+}
+.btn-dark:hover {
+    background-color: var(--coklat-tua);
+    border-color: var(--coklat-tua);
+}
+.btn-outline-dark {
+    color: var(--coklat-susu);
+    border-color: var(--coklat-susu);
+}
+.btn-outline-dark:hover {
+    background-color: var(--coklat-susu);
+    border-color: var(--coklat-susu);
+    color: var(--putih);
+}
+/* Tombol WhatsApp / Checkout */
+.btn-success {
+    background-color: #2E7D32; /* Hijau alami */
+    border-color: #2E7D32;
+}
+
+/* Mengubah warna teks harga (awalnya merah) menjadi coklat keemasan */
+.text-danger {
+    color: var(--coklat-emas) !important;
+}
+
+/* ================= AREA PLACEHOLDER (KOTAK GAMBAR) ================= */
+.placeholder-box {
+    background-color: #fff9f0; /* Krem sangat muda */
+    border: 2px dashed #d7b586;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--coklat-susu);
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Kotak Hero (Banner Utama) dengan Gradasi */
+.hero .placeholder-box { 
+    height: 350px; 
+    font-size: 1.5rem; 
+    background: linear-gradient(135deg, #F5DEB3, #FFE4B5); /* Gradasi Mentega */
+    border: none;
+    box-shadow: 0 8px 20px rgba(160, 82, 45, 0.1);
+    color: var(--coklat-tua);
+}
+
+/* ================= IKON & KARTU PRODUK ================= */
+.feature-icon { 
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+    color: var(--coklat-emas); 
+}
+
+.product-card { 
+    transition: all 0.3s ease-in-out; 
+    padding: 15px;
+    border-radius: 12px;
+    background-color: var(--putih);
+    border: 1px solid #f0e6d2;
+}
+.product-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 25px rgba(160, 82, 45, 0.15);
+    border-color: var(--krem-gandum);
+}
+.product-card .placeholder-box { 
+    height: 180px; 
+}
+
+/* ================= PENCARIAN & KERANJANG ================= */
+.search-box {
+    background-color: #fff9f0 !important;
+    border: 1px solid var(--krem-gandum) !important;
+}
+.search-box input { 
+    border-radius: 20px; 
+    padding-left: 15px; 
+    color: var(--coklat-tua);
+}
+
+.table td { vertical-align: middle; color: var(--coklat-tua); border-color: #f0e6d2; }
+.table-light th { background-color: var(--krem-gandum); color: var(--coklat-tua); border-color: #f0e6d2; }
+
+.product-img-thumb { 
+    width: 60px; height: 60px; 
+    background-color: var(--krem-gandum); 
+    border: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 8px;
+    color: var(--coklat-susu);
+}
+
+/* ================= FOOTER ================= */
+/* Mengubah background footer menjadi Coklat Tua */
+.bg-dark {
+    background-color: var(--coklat-tua) !important;
+}
+/* ================= PENGATURAN GAMBAR PRODUK BARU ================= */
+.product-img-container {
+    width: 100%;
+    height: 180px; /* Menentukan tinggi box gambar seragam */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff9f0;
+    border: 1px solid #f0e6d2;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memotong gambar secara proporsional agar tidak gepeng */
+    transition: transform 0.3s ease;
+}
+
+/* Efek zoom tipis saat kartu disorot (hover) */
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+/* Pengaturan gambar mini di halaman keranjang */
+.product-img-thumb {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 1px solid #f0e6d2;
+}
+
+.product-img-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Styling Box Pencarian di Navbar */
+.search-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+/* Kustomisasi Kartu Formulir */
+.card {
+    border-radius: 12px;
+    border: 1px solid #e3e6f0;
+}
+
+/* Gaya opsional untuk tautan atau tombol nav */
+.nav-link.active {
+    color: #198754 !important; /* Hijau penyesuaian tema */
+}

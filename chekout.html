@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Toko Roti</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container mb-5 mt-4">
+        <div class="section-title mb-4 border-bottom pb-2">
+            <h3>Checkout</h3>
+        </div>
+        <div class="row">
+            <div class="checkout-left col-lg-7 border-end pe-lg-4">
+                <h5 class="mb-3">Informasi Pengiriman</h5>
+                <input type="text" class="form-control mb-3" placeholder="Nama Lengkap">
+                <input type="text" class="form-control mb-3" placeholder="Nomor WhatsApp">
+                <textarea class="form-control mb-4" rows="3" placeholder="Alamat Lengkap"></textarea>
+                
+                <h5 class="mb-3">Metode Pembayaran</h5>
+                <select class="form-select mb-4">
+                    <option value="bank">Transfer Bank</option>
+                    <option value="cod">COD (Bayar di Tempat)</option>
+                </select>
+            </div>
+            
+            <div class="checkout-right col-lg-5 ps-lg-4">
+                <h5 class="mb-3">Ringkasan Pesanan</h5>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Roti Coklat x 1</span>
+                    <span>Rp 15.000</span>
+                </div>
+                <div class="d-flex justify-content-between fw-bold fs-5 mt-3 pt-3 border-top">
+                    <span>Total Bayar</span>
+                    <span>Rp 15.000</span>
+                </div>
+                <button class="btn btn-success w-100 mt-4 py-2" onclick="alert('Pesanan Berhasil Dibuat!')">Buat Pesanan</button>
+            </div>
+        </div>
+    </main>
+
+    </body>
+</html>
